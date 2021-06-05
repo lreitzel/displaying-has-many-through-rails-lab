@@ -1,6 +1,6 @@
-Doctor.destroy_all
-Patient.destroy_all
-Appointment.destroy_all
+# Doctor.destroy_all
+# Patient.destroy_all
+# Appointment.destroy_all
 
 meredith = Doctor.create({name: "Meredith Grey", department: "Internal Medicine"})
 hawkeye = Doctor.create({name: "Hawkeye Pierce", department: "Surgery"})
@@ -15,7 +15,7 @@ lisa = Patient.create({name: "Lisa Simpson", age: 8})
 maggie = Patient.create({name: "Maggie Simpson", age: 1})
 
 Appointment.create([
-  {appointment_datetime: DateTime.new(2016, 03, 15, 18, 00, 0), patient: homer, doctor: hawkeye},
+  # {appointment_datetime: DateTime.new(2016, 03, 15, 18, 00, 0), patient: homer, doctor: hawkeye},
   {appointment_datetime: DateTime.new(2016, 01, 11, 20, 20, 0), patient: bart, doctor: meredith},
   {appointment_datetime: DateTime.new(2016, 04, 22, 14, 00, 0), patient: marge, doctor: michaela},
   {appointment_datetime: DateTime.new(2017, 10, 30, 15, 00, 0), patient: lisa, doctor: phillip},
